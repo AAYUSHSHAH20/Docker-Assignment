@@ -30,6 +30,6 @@ app.post('/submit-form', async (req, res) => {
 });
 
 // Start the server
-app.listen(PORT, () => {
-    console.log(`Frontend server running at http://localhost:${PORT}`);
+app.listen(PORT, '0.0.0.0', () => {
+    console.log(`Frontend server running at http://0.0.0.0:${PORT}`);
 });
